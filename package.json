@@ -1,0 +1,16 @@
+{
+  "name": "awhina",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "~1.13.2",
+    "express": "~4.13.1",
+    "express-handlebars": "^3.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
