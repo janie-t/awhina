@@ -22,29 +22,15 @@ app.get('/', function(request, response) {
 })
 
 app.get('/home', function(request, response) {
- response.render('awhinaIndex') //once the /cats route has been requested, the callback function renders, or produces, the catsIndex page. It also uses the info inside the data variable set at the top of the page.
+ response.render('awhinaIndex') //once the /home route has been requested, the callback function renders, or produces, the awhinaIndex page. It also uses the info inside the data variable set at the top of the page.
 })
 
 app.get('/home/how', function(request, response) {
- response.render('awhinaHow') //once the /cats route has been requested, the callback function renders, or produces, the catsIndex page. It also uses the info inside the data variable set at the top of the page.
+ response.render('awhinaHow') //once the /home/how route has been requested, the callback function renders, or produces, the awhinaHow page.
 })
 
 app.get('/home/laugh', function(request, response) {
- response.render('awhinaLaugh', data) //if the parameter of /new is included in the request, the catsNew page is rendered
+ response.render('awhinaLaugh', data) //if the parameter of /laugh is included in the request, the awhinaLaugh page is rendered
 })
-
-// app.get('/cats/:id', function(request,response){
-//   var cats = data.cats
-//   var thisCat = cats.find(function(cat){
-//     return cat.id === Number(request.params.id)
-//   })
-//   console.log(thisCat)
-//
-//   response.render('catsShow', thisCat)
-// })
-//
-// app.post('/cats', function(request,response) {
-//   console.log(request.body);
-// })
 
 module.exports = app;
