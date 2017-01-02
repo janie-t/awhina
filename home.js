@@ -66,4 +66,8 @@ app.get('/home/socialmedia', function(request, response) {
  response.render('awhinaSocialmedia', data) //if the parameter of /socialmedia is included in the request, the awhinaSocialmedia page is rendered
 })
 
+app.get('/home/otherhelp', function(request, response) {
+ response.render('awhinaOtherhelp', data) //if the parameter of /otherhelp is included in the request, the awhinaSocialmedia page is rendered
+})
+
 module.exports = app;
