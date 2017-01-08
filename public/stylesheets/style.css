@@ -5,9 +5,10 @@
 }
 
 body {
-  background-color: #b3dec8;
+  background-color: #ade6d8;
   text-align: center;
   font-size: 1.5em;
+  color: black;
 }
 
 
@@ -19,12 +20,10 @@ body {
   margin: auto;
 }
 
-/********container for topic headings***/
 .topics {
-  width: 70%;
-  margin: auto;
-  height: auto;
-  padding: 1em;
+  width: 60%;
+  float: left;
+  margin-left: 25%;
 }
 
 /********topic headings***********/
@@ -32,22 +31,19 @@ body {
   border-radius: 25px;
   border-color: white;
   border-style: solid;
-   background: pink;
-   padding: 1em;
-   width: 150px;
-   height: 100px;
-   float: left;
-   margin: 1em;
+  background: #adbce6;
+  padding: .5em;
+  width: 150px;
+  height: 100px;
+  float: left;
+  margin: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .help {
-  border-radius: 25px;
-   background: yellow;
-   padding: 20px;
-   width: 300px;
-   height: 50px;
-   float: left;
-   text-align: center;
+  background: pink;
 }
 
 /*****General styles***********/
@@ -80,6 +76,9 @@ p {
 
 a {
 	text-decoration: none;
+  color: #dd68c0;
+  text-shadow: 1px 1px black;
+  font-size: 1.2em;
 }
 
 
