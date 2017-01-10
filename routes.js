@@ -8,11 +8,12 @@ function getContents (req, res) {
  res.render('awhinaIndex') //once the /home route has been requested, the callback function renders, or produces, the awhinaIndex page. It also uses the info inside the data variable set at the top of the page.
 }
 
-function getMotivation (req, res)) {
+function getMotivation (req, res) {
   db.randomMotivation()
   .then(motivation => {
-    res.render('awhinaMotivate', {'motivation': motivation})
+    res.render('awhinaMotivate', {'motivate_item': motivate_item})
   })
+}
 
 module.exports = {
   getIndex,

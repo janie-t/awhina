@@ -9,7 +9,9 @@
     "body-parser": "~1.13.2",
     "express": "^4.13.4",
     "express-handlebars": "^3.0.0",
-    "handlebars": "^4.0.6"
+    "handlebars": "^4.0.6",
+    "knex": "^0.12.6",
+    "sqlite3": "^3.1.8"
   },
   "devDependencies": {
     "nodemon": "^1.11.0"
