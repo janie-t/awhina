@@ -4,7 +4,7 @@
  * Module dependencies.
  */
 
-var app = require('../home');
+var app = require('../main');
 var http = require('http');
 
 /**

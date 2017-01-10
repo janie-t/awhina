@@ -3,7 +3,7 @@ var handlebars = require('handlebars')
 var expresshbs = require('express-handlebars')
 var path = require('path')
 var bodyParser = require('body-parser')
-
+var routes = require('./routes')
 var app = express()
 
 // view engine setup
@@ -14,21 +14,14 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(express.static(path.join(__dirname, 'public')))
 
-//---------------------Ignore above here-------------------//
+//code above is general setup
+
 
 var data = {url: 'http://thecatapi.com/api/images/get?format=src&type=gif'}
 
-app.get('/', function(request, response) {
- response.redirect('/home') // when users type in localhost:3000 it redirects the user to localhost:3000/home
-})
-
-app.get('/home', function(request, response) {
- response.render('awhinaIndex') //once the /home route has been requested, the callback function renders, or produces, the awhinaIndex page. It also uses the info inside the data variable set at the top of the page.
-})
-
-app.get('/home/motivate', function(request, response) {
- response.render('awhinaMotivate', data) //if the parameter of /motivate is included in the request, the awhinaMotivate page is rendered
-})
+app.get('/', routes.getIndex);
+app.get('/home', routes.getContents);
+app.get('/home/motivate', routes.getMotivation);
 
 app.get('/home/emotion', function(request, response) {
  response.render('awhinaEmotion', data) //if the parameter of /emotion is included in the request, the awhinaEmotion page is rendered
