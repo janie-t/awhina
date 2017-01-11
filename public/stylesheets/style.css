@@ -7,7 +7,6 @@
 body {
   background-color: #ade6d8;
   text-align: center;
-  font-size: 1.5em;
   color: black;
 }
 
@@ -32,9 +31,9 @@ body {
   border-color: white;
   border-style: solid;
   background: #adbce6;
-  padding: .5em;
+  padding: .2em;
   width: 150px;
-  height: 100px;
+  height: 80px;
   float: left;
   margin: 1em;
   display: flex;
@@ -46,17 +45,39 @@ body {
   background: pink;
 }
 
+.item {
+  background: white;
+  width: 70%;
+  max-width: 800px;
+  text-align: center;
+  margin: 1em auto .2em auto;
+  font-size: 2em;
+  border-radius: 5px;
+}
+
+.source {
+  background: white;
+  width: 70%;
+  max-width: 800px;
+  text-align: center;
+  margin: 0 auto 1em auto;
+  font-size: 1.2em;
+  border-radius: 5px;
+}
+
+
 /*****General styles***********/
 
 h1 {
   text-align: center;
   font-family: 'Lobster', cursive;
-  font-size: 2.7em;
+  font-size: 2.2em;
 }
 
 h3 {
   text-align: center;
   font-family: 'Arimo', sans-serif;
+
   font-size: 1.1em;
 }
 
@@ -78,26 +99,28 @@ a {
 	text-decoration: none;
   color: #dd68c0;
   text-shadow: 1px 1px black;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 
 @media (min-width:550px) {
+  h1 {
+    font-size: 3em;
+  }
+
   h3 {
       font-size: 2em;
     }
+
   p {
     font-size: 1.2em;
   }
-}
 
-
-@media (min-width:550px) {
-  .nav {
-    font-size: 1.4rem;
-    font-weight: normal;
+  .item {
+    font-size: 2.5em;
   }
 }
+
 
 .nav ul li {
 	display: inline;
