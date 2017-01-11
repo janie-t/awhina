@@ -7,7 +7,7 @@
 body {
   background-color: #ade6d8;
   text-align: center;
-  color: black;
+  color: #181818;
 }
 
 img {
@@ -19,7 +19,10 @@ embed {
   max-width: 70%;
   max-height: 70%;
 }
-/********Welcome message**********/
+
+
+
+/********CLASS STYLES***********/
 
 .welcome {
   width: 50%;
@@ -33,7 +36,6 @@ embed {
   margin-left: 25%;
 }
 
-/********topic headings***********/
 .one {
   border-radius: 25px;
   border-color: white;
@@ -57,25 +59,38 @@ embed {
   background: white;
   width: 70%;
   max-width: 800px;
+  min-height: 20%;
+  max-height: 40%;
   text-align: center;
   margin: 1em auto .2em auto;
   font-size: 1em;
   border-radius: 5px;
+  padding: .5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .source {
   background: white;
   width: 50%;
-  max-width: 800px;
+  max-width: 500px;
   text-align: center;
-  margin: 0 auto 1em auto;
+  margin: 1em auto 1em auto;
   font-size: .8em;
   font-style: italic;
   border-radius: 5px;
 }
 
+#button {
+  background-color: #D3D3D3;
+  padding: 0 .2em 0 .2em;
+  border-radius: 10px;
+  font-size: 0.5em;
+  font: #181818;
+}
 
-/*****General styles***********/
+/*****GENERAL STYLES**********/
 
 h1 {
   text-align: center;
@@ -86,7 +101,6 @@ h1 {
 h3 {
   text-align: center;
   font-family: 'Arimo', sans-serif;
-
   font-size: 1.1em;
 }
 
@@ -106,11 +120,12 @@ p {
 
 a {
 	text-decoration: none;
-  color: #dd68c0;
-  text-shadow: 1px 1px black;
+  color: #282828 ;
   font-size: 1em;
 }
 
+
+/*************RESPONSIVE STYLE**************/
 
 @media (min-width:550px) {
   h1 {
@@ -132,34 +147,9 @@ a {
   .source {
     font-size: 1em;
   }
-}
 
-
-.nav ul li {
-	display: inline;
-	margin: 0 20px 0 0;
-	margin-bottom: 10px;
-  background-color: rgba(195, 192, 236, 0.5);
-  border-radius: 10%;
-}
-
-.nav a {
-	text-decoration: none;
-}
-
-.nav a:hover {
-	text-decoration: underline;
-}
-
-.button {
-  padding: 0 0;
-  border-radius: 1.3em;
-  font-size: 0.5em;
-}
-
-
-@media (min-width:550px) {
-.one {
-    font-size: .8em;
+  .one {
+      font-size: .8em;
+    }
   }
 }

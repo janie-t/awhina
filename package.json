@@ -6,8 +6,8 @@
     "start": "nodemon ./bin/www"
   },
   "dependencies": {
-    "body-parser": "~1.13.2",
-    "express": "^4.13.4",
+    "body-parser": "^1.13.3",
+    "express": "^4.14.0",
     "express-handlebars": "^3.0.0",
     "handlebars": "^4.0.6",
     "knex": "^0.12.6",
