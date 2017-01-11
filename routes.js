@@ -11,7 +11,13 @@ function getContents (req, res) {
 function getMotivation (req, res) {
   db.randomMotivation()
   .then(motivation => {
-    res.render('awhinaMotivate', motivation)
+      switch (motivation.motivate_type) {
+      case 'text': res.render('motivate', motivation)
+      break
+      case 'image': res.render('motivateImage', motivation)
+      break
+      case 'video': res.render('motivateVideo', motivation)
+    }
   })
 }
 
