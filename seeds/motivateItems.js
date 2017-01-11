@@ -18,6 +18,12 @@ exports.seed = function(knex, Promise) {
         knex('motivate').insert({motivate_id: 11, motivate_item: '“It’s not about how many years of experience you have. It’s about the quality of your years of experience.”', motivate_source: 'Jacob Cass, Logo of the Day', motivate_type: 'text'}),
         knex('motivate').insert({motivate_id: 12, motivate_item: '“The biggest risk is not taking any risk… In a world that changing really quickly, the only strategy that is guaranteed to fail is not taking risks.”', motivate_source: 'Mark Zuckerberg, Facebook', motivate_type: 'text'}),
         knex('motivate').insert({motivate_id: 13, motivate_item: '"So if you want to gain confidence and self -esteem, you need to be around positive people, those that are nurturing you, those that are encouraging you, those that are believing in you." ', motivate_source: 'Andrian Teodoro', motivate_type: 'text'}),
+        knex('motivate').insert({motivate_id: 14, motivate_item: 'https://www.youtube.com/embed/FLbXrNGVXfE', motivate_source: 'TED talks: Sir Ken Robinson', motivate_type: 'video'}),
+        knex('motivate').insert({motivate_id: 15, motivate_item: 'https://www.youtube.com/embed/yDK6llUNJhc?list=PLJB39P6VVAhnSvufijF0gDjBoKsv_uDFg', motivate_source: 'Vaughan Rowsell - founder of Vend', motivate_type: 'video'}),
+        knex('motivate').insert({motivate_id: 16, motivate_item: 'https://www.youtube.com/embed/Jh3nl0LnHlA', motivate_source: 'Mahe Drysdale - Olympic rower', motivate_type: 'video'}),
+        knex('motivate').insert({motivate_id: 17, motivate_item: 'https://www.youtube.com/embed/R3pvi2ddi3o', motivate_source: 'Sarah Walker - BMX Champion', motivate_type: 'video'}),
+        knex('motivate').insert({motivate_id: 18, motivate_item: 'https://www.youtube.com/embed/JFDiTvqdW2A', motivate_source: 'Steve Hansen - All Blacks Coach', motivate_type: 'video'}),
+        knex('motivate').insert({motivate_id: 19, motivate_item: 'https://www.youtube.com/embed/DspkMmYGXiw?list=PLJB39P6VVAhnSvufijF0gDjBoKsv_uDFg', motivate_source: 'Hamish Pinkham - founder Rhythm and Vines', motivate_type: 'video'}),
 
 
       ]);
