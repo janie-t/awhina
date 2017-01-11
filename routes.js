@@ -11,7 +11,7 @@ function getContents (req, res) {
 function getMotivation (req, res) {
   db.randomMotivation()
   .then(motivation => {
-    res.render('awhinaMotivate', {'motivation': motivation})
+    res.render('awhinaMotivate', motivation)
   })
 }
 
