@@ -5,7 +5,11 @@ function getIndex (req, res) {
 }
 
 function getContents (req, res) {
- res.render('awhinaIndex') //once the /home route has been requested, the callback function renders, or produces, the awhinaIndex page. It also uses the info inside the data variable set at the top of the page.
+ res.render('index') //once the /home route has been requested, the callback function renders, or produces, the index page.
+}
+
+function getContact (req, res) {
+  res.render('contact')
 }
 
 function getMotivation (req, res) {
@@ -21,8 +25,13 @@ function getMotivation (req, res) {
   })
 }
 
+
+
+
+
 module.exports = {
   getIndex,
   getContents,
-  getMotivation
+  getMotivation,
+  getContact
 }

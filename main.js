@@ -22,6 +22,7 @@ var data = {url: 'http://thecatapi.com/api/images/get?format=src&type=gif'}
 app.get('/', routes.getIndex);
 app.get('/home', routes.getContents);
 app.get('/home/motivate', routes.getMotivation);
+app.get('/home/contact', routes.getContact);
 
 // app.get('/home/emotion', function(request, response) {
 //  response.render('awhinaEmotion', data) //if the parameter of /emotion is included in the request, the awhinaEmotion page is rendered

@@ -25,7 +25,7 @@ embed {
 /********CLASS STYLES***********/
 
 .welcome {
-  width: 50%;
+  width: 70%;
   text-align: center;
   margin: auto;
 }
@@ -82,12 +82,21 @@ embed {
   border-radius: 5px;
 }
 
+#toggle {
+  background-color: #b2ffb2;
+  padding: 0 .2em 0 .2em;
+  border-radius: 10px;
+  font-size: 0.5em;
+  margin: 0 0 2.5em 0;
+}
+
 #button {
   background-color: #D3D3D3;
   padding: 0 .2em 0 .2em;
   border-radius: 10px;
   font-size: 0.5em;
-  font: #181818;
+  font: black;
+  margin: 0 0 2.5em 0;
 }
 
 /*****GENERAL STYLES**********/
@@ -120,8 +129,8 @@ p {
 
 a {
 	text-decoration: none;
-  color: #282828 ;
-  font-size: 1em;
+  color: 	#191970;
+  font-size: 1.1em;
 }
 
 
@@ -136,8 +145,16 @@ a {
       font-size: 2em;
     }
 
+  h4 {
+      font-size: 1.7em;
+  }
+
   p {
     font-size: 1.2em;
+  }
+
+  a {
+    font-size: 1.4em;
   }
 
   .item {

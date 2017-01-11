@@ -17,8 +17,27 @@
       })
     }
   })
-</script> -->
+</script> --><!---->
+  <script type="text/javascript">
+      function selectOptions(){
+          var checkboxes = document.getElementsByName('approve[]');
+          var button = document.getElementById('toggle');
+          if(button.value == 'select all media types'){
+              for (var i in checkboxes){
+                  checkboxes[i].checked = 'FALSE';
+              }
+              button.value = 'deselect'
+          }else{
+              for (var i in checkboxes){
+                  checkboxes[i].checked = '';
+              }
+              button.value = 'select all media types';
+          }
+      }
+  </script>
 
+
+  
   <title>āwhina</title>
 </head>
 
@@ -34,12 +53,16 @@
 </div>
 <br/>
 
-<button type="button" onClick="window.location.reload();" id="button" >Click for another one</button>
+<button type="button" onClick="window.location.reload();" id="button" >Click for another one</button><br>
+
+<div id="mediaChoice">
+  <input type="checkbox" name="approve[]" value="text" />Text
+  <input type="checkbox" name="approve[]" value="image" />Image
+  <input type="checkbox" name="approve[]" value="video" />Video
+  <input type="button" id="toggle" value="select all media types" onClick="selectOptions()" />
+</div>
 
 <div>
   <a class="link" href="/home">Home |</a>
-  <a class="link" href="/home">Contact</a>
+  <a class="link" href="/home/contact">Contact</a>
 </div>
-
-
-<!---->
