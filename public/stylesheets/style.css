@@ -60,10 +60,10 @@ embed {
   width: 70%;
   max-width: 800px;
   min-height: 20%;
-  max-height: 40%;
+  max-height: 50%;
   text-align: center;
   margin: 1em auto .2em auto;
-  font-size: 1em;
+  font-size: .9em;
   border-radius: 5px;
   padding: .5em;
   display: flex;
@@ -167,6 +167,5 @@ a {
 
   .one {
       font-size: .8em;
-    }
   }
 }

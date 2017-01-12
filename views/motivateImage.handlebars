@@ -9,23 +9,6 @@
   <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
   <link type="text/css" href="/stylesheets/style.css" rel="stylesheet">
-  <script type="text/javascript">
-      function selectOptions(){
-          var checkboxes = document.getElementsByName('approve[]');
-          var button = document.getElementById('toggle');
-          if(button.value == 'select all media types'){
-              for (var i in checkboxes){
-                  checkboxes[i].checked = 'FALSE';
-              }
-              button.value = 'deselect'
-          }else{
-              for (var i in checkboxes){
-                  checkboxes[i].checked = '';
-              }
-              button.value = 'select all media types';
-          }
-      }
-  </script>
   <title>āwhina | helping youth</title>
 </head>
 
@@ -42,10 +25,11 @@
 <br/>
 <button type="button" onClick="window.location.reload();" id="button">Click for another one</button>
 <div id="mediaChoice">
-  <input type="checkbox" name="approve[]" value="text" />Text
-  <input type="checkbox" name="approve[]" value="image" />Image
-  <input type="checkbox" name="approve[]" value="video" />Video
-  <input type="button" id="toggle" value="select all media types" onClick="selectOptions()" />
+  <p>Select the type of media</p>
+  <input type="checkbox" name="choose" value="text" />Text
+  <input type="checkbox" name="choose" value="image" />Image
+  <input type="checkbox" name="choose" value="video" />Video
+
 </div>
 <div>
   <a class="link" href="/home">Home |</a>
