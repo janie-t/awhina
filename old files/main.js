@@ -1,28 +1,28 @@
-var express = require('express')
-var handlebars = require('handlebars')
-var expresshbs = require('express-handlebars')
-var path = require('path')
-var bodyParser = require('body-parser')
-var routes = require('./routes')
-var app = express()
-
-// view engine setup
-app.engine('handlebars', expresshbs({defaultLayout: ''}))
-app.set('view engine', 'handlebars')
-
-app.use(bodyParser.json())
-app.use(bodyParser.urlencoded({ extended: false }))
-app.use(express.static(path.join(__dirname, 'public')))
-
-//code above is general setup
-
-
-var data = {url: 'http://thecatapi.com/api/images/get?format=src&type=gif'}
-
-app.get('/', routes.getIndex);
-app.get('/home', routes.getContents);
-app.get('/home/motivate', routes.getMotivation);
-app.get('/home/contact', routes.getContact);
+// var express = require('express')
+// var handlebars = require('handlebars')
+// var expresshbs = require('express-handlebars')
+// var path = require('path')
+// var bodyParser = require('body-parser')
+// var routes = require('./routes')
+// var app = express()
+//
+// // view engine setup
+// app.engine('handlebars', expresshbs({defaultLayout: ''}))
+// app.set('view engine', 'handlebars')
+//
+// app.use(bodyParser.json())
+// app.use(bodyParser.urlencoded({ extended: false }))
+// app.use(express.static(path.join(__dirname, 'public')))
+//
+// //code above is general setup
+//
+//
+// var data = {url: 'http://thecatapi.com/api/images/get?format=src&type=gif'}
+//
+// app.get('/', routes.getIndex);
+// app.get('/home', routes.getContents);
+// app.get('/home/motivate', routes.getMotivation);
+// app.get('/home/contact', routes.getContact);
 
 // app.get('/home/emotion', function(request, response) {
 //  response.render('awhinaEmotion', data) //if the parameter of /emotion is included in the request, the awhinaEmotion page is rendered
@@ -63,5 +63,5 @@ app.get('/home/contact', routes.getContact);
 // app.get('/home/otherhelp', function(request, response) {
 //  response.render('awhinaOtherhelp', data) //if the parameter of /otherhelp is included in the request, the awhinaSocialmedia page is rendered
 // })
-
-module.exports = app;
+//
+// module.exports = app;
